@@ -1,0 +1,87 @@
+.header {
+    position: fixed; 
+    width: 100vw;  
+}
+
+.header__container {
+    border-bottom: 1px solid #cecfce;
+    padding: 1.5rem 3.5rem;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header__title {
+    font-weight: 700;
+}
+
+
+.header__nav ul {
+    display: flex;
+    justify-content: center;
+    column-gap: 1.5rem;
+}
+
+.header__nav a {
+    color: var(--default-text-color);
+    font-weight: 500;
+}
+
+#instagram-link img {
+    width: 30px;
+    height: 30px;
+}
+
+@media (max-width: 1280px) {
+    .header__social-media {
+        display: none;
+    }
+}
+
+@media (max-width: 900px) {
+    
+    .header__container {
+        padding: 1rem 2.5rem;
+        justify-content: space-between;
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    .header__nav--active {
+        display: flex;
+        position: absolute;
+        row-gap: 1.5rem;
+        left: 50%;
+        top: 100%;
+        transform: translateX(-50%);
+        background-color: var(--default-bg-color);
+
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+
+        padding: 2rem;
+    }
+
+    .header__nav ul {
+        padding: 3rem 1rem 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 2rem;
+    }
+
+    .header__nav a {
+        font-size: 1.25rem;
+    }
+
+    #header-menu-btn {
+        width:  40px;
+        height: 40px;
+        background:  url(../assets/icons/menu.svg) no-repeat center / cover;
+    }
+}

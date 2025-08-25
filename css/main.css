@@ -1,0 +1,23 @@
+@import "./reset.css";
+@import "./base.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --default-bg-color: #FFFFFD;
+    --default-text-color: #1C352D;
+    --default-text-font: 'Inter', sans-serif;
+}
+
+body {
+    position: relative;
+    background-color: var(--default-bg-color);
+    box-sizing: border-box;
+    overflow-x: hidden;
+
+    color: var(--default-text-color);
+    font-family: var(--default-text-font);
+    font-size: 1.125rem;
+    height: 100vh;
+
+}
