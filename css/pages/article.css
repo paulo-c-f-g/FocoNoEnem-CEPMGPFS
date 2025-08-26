@@ -9,6 +9,7 @@
     max-width: 900px;
     font-size: 1.125rem;
     line-height: 1.2;
+    text-align: justify;
 
 }
 
@@ -89,4 +90,8 @@
 
 .article__card--image figcaption {
     text-align: center;
+}
+
+.article strong {
+    font-weight: 500;
 }
