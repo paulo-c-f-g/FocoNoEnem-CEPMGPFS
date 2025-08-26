@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
 
-    padding: 7rem 0 3rem;
+    padding: 8rem 0 3rem;
 }
 
 .content__title {
@@ -16,10 +16,10 @@
 }
 
 .archives {
-    margin-top: 3rem;
+    margin-top: 4rem;
     display: grid;
 
-    padding: 0 2rem;
+    padding: 0 1rem;
 }
 
 .archives__title {
@@ -38,9 +38,6 @@
 
 .sidebar {
     position: relative;
-    width: 100%;
-    height: 600px;
-
 }
 
 .sidebar__fixed {
@@ -71,11 +68,10 @@
 .archives__card-container {
     display: flex;
     flex-direction: column;
-    row-gap: 2rem;
+    row-gap: 3rem;
 }
 
 .archive__card-item {
-    width: 100%;
     max-width: 700px;
 
     border-bottom: 1px solid var(--color-lighter-gray);

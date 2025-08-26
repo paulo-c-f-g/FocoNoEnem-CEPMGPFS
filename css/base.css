@@ -13,6 +13,10 @@
     justify-content: space-around;
     align-items: center;
 }
+.header__logo img {
+    width: 65px;
+    height: 65px;
+}
 
 .header__title {
     font-weight: 700;
