@@ -50,13 +50,14 @@
     background:  url(../assets/icons/search.svg) no-repeat center / cover;
 }
 
-#header-menu-btn {
+.header__menu-btn {
     display: none;
 
     width:  30px;
     height: 30px;
     background:  url(../assets/icons/menu.svg) no-repeat center / cover;
 }
+
 
 
 @media (max-width: 900px) {
@@ -102,6 +103,11 @@
     #header-menu-btn {
         display: block;
     }
+
+    .header__menu-btn--active {
+         background:  url(../assets/icons/close.svg) no-repeat center / cover;
+    }
+
 
 
 }
