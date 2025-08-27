@@ -40,13 +40,14 @@
     position: relative;
 }
 
-.sidebar__fixed {
+.sidebar__inner {
 
     background-color: var(--color-lighter-gray);
 
-    position: fixed;
+    position: sticky;
     width: 100%;
     max-width: 290px;
+    top: 20%;
 
     display: flex;
     flex-direction: column;
@@ -56,12 +57,12 @@
     padding: 2rem;
 }
 
-.sidebar__fixed h5 {
+.sidebar__inner h5 {
     font-size: 1.25rem;
     font-weight: 600;
 }
 
-.sidebar__fixed a {
+.sidebar__inner a {
     color: var(--default-text-color);
 }
 

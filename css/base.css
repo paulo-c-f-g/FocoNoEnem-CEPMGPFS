@@ -58,6 +58,44 @@
     background:  url(../assets/icons/menu.svg) no-repeat center / cover;
 }
 
+.footer {
+    
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+    
+    border-top: 2px solid var(--color-lighter-gray);
+    padding: 2rem;
+}
+
+.footer__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 1rem;
+}
+
+.footer p {
+    font-weight: 600;
+}
+
+.footer a {
+    color: var(--default-text-color);
+}
+
+.footer__logos img:nth-child(1) {
+    width: 60px;
+}
+.footer__logos img:nth-child(2) {
+    width: 120px;
+}
+
+@media (max-width: 720px) {
+    .footer__container {
+        align-items: center;
+    }
+}
 
 
 @media (max-width: 900px) {
