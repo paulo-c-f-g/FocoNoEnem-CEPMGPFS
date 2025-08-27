@@ -28,3 +28,6 @@ body {
 
 }
 
+a:hover {
+    opacity: .8;
+}
