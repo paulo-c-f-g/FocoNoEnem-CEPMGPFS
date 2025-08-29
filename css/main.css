@@ -31,3 +31,80 @@ body {
 a:hover {
     opacity: .8;
 }
+
+.search {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    width: 100vw;
+    height: 100vh;
+    padding: 5rem 0 3rem;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.search--active {
+    display: block;
+}
+
+.search__container {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    padding: 0 1.5rem;
+    margin: 0 auto;
+}
+
+
+.search__input {
+    font-size: 1.125rem;
+    background: #ffffff url(/assets/icons/search.svg) no-repeat 25px center / 20px 20px;
+
+    border-radius: 8px 8px 0 0 ;
+    border: 1px solid var(--color-regular-gray);
+    padding: 1.25rem 2rem 1.25rem 4rem;
+    outline: none;
+}
+
+.search__results {
+    display: none;
+    background-color: #ffffff;
+    max-height: 600px;
+    border-radius: 0 0 8px 8px ;
+    padding: 0 0 1rem;
+    overflow-y: scroll;
+}
+
+.search__results--active {
+    display: block;
+}
+
+.search__card {
+    margin-top: 1rem;
+    padding: 1rem 1.25rem;
+
+}
+
+.search__card:hover {
+    cursor: pointer;
+    background-color: var(--color-lighter-gray);
+
+}
+
+.search__card h2 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.search__card strong {
+    font-weight: 600;
+}
+
+.search__card p {
+    font-size: .8rem;
+    color: #636363;
+
+    margin-top: 4px;
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
+    overflow-x: hidden;
+}

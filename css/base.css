@@ -2,7 +2,7 @@
     position: fixed; 
     width: 100vw;  
     background-color: var(--default-bg-color);
-    z-index: 999;
+    z-index: 200;
 }
 
 .header__container {
@@ -48,6 +48,10 @@
     width:  30px;
     height: 30px;
     background:  url(../assets/icons/search.svg) no-repeat center / cover;
+}
+
+#search-btn:hover, .header__menu-btn:hover {
+    cursor: pointer;
 }
 
 .header__menu-btn {
