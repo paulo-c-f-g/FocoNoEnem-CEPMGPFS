@@ -124,15 +124,6 @@ document.addEventListener("click", (e) => {
     }
 })
 
-// search.addEventListener('focusout', (e) => {
-//     if(!search.contains(e.relatedTarget)) {
-//         search.classList.remove("search--active");
-//         searchResults.classList.remove("search__results--active");
-//         searchInput.value = "";
-//     }
-// })
-
-
 loadArticles().then(data => {
     const articles = data.articles;
     if( archivesContainer) {
@@ -145,3 +136,23 @@ loadArticles().then(data => {
 
 
 });
+
+//summary
+const summaryContainer = document.querySelector(".article__summary");
+const articleTopics = document.querySelectorAll(".article__topic");
+
+if(summaryContainer) {
+    articleTopics.forEach( topic => {
+        const topicTitle = topic.querySelector(".article__subtitle").textContent;
+
+        let topicLink = document.createElement("a");
+        topicLink.textContent = topicTitle;
+
+        topicLink.addEventListener("click", (e) => {
+            e.preventDefault();
+            topic.scrollIntoView({behavior: "smooth"});
+        })
+
+        summaryContainer.appendChild(topicLink);
+    })
+}
